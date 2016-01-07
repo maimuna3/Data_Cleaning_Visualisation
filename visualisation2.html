@@ -1,0 +1,76 @@
+<!DOCTYPE>
+<html lang= "en">
+<html>
+    <head>
+        <meta charset ="utf-8">
+        <title>Open Data</title>
+        <link href="style.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <script type= "text/javascript" src= "js/bootstrap.js"></script>
+        <script type= "text/javascript" src= "d3/d3.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/waypoints.js"></script>
+        <script src="js/waypoints-sticky.js"></script>
+        <script src="http://d3js.org/d3.v2.min.js?2.10.0"></script>
+    <script type="text/javascript" src="../d3.v2.js" charset="utf-8" ></script>
+    <script type="text/javascript" src="column-chart.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function () {
+            $('.nav').waypoint('sticky');
+        });
+    </script>
+    </head>
+    <body background= "images/background.jpg">
+    <header>
+ <img src= "images/logo.jpg" alt="logo" width= "300" height="150">  <img class="image" src= "images/head.png" alt="head" width= "1120" height="150">
+    </header>
+    
+  
+    <div class="nav">
+
+    <ul>
+    <li><a href="index.html"><b>DATA CLEANING</b></a></li>
+    <li><a href="visualisation1.html"><b>VISUALISATION 1</b></a></li>
+    <li><a href="visualisation2.html"><b>VISUALISATION 2</b></a></li>
+    <li><a href="about.html"><b>ABOUT ME</b></a></li>
+    <li><a href="contact.html"><b>CONTACT ME</b></a></li>
+    </ul>
+    
+   
+    </div>
+    <section>
+    
+    <div>
+    <br>
+    <table>
+  <tr><th><h3>What the visualization is showing</h3></th><th><h3>How the visualization is interactive</h3></th><th><h3>Who the intended audience is</h3></th></tr>
+    <tr>
+    <td>This visualization shows information about the number  &nbsp; of projects completed in various  &nbsp; departments.
+    A bar represents each department and the height depicts  &nbsp;  &nbsp;  the number of projects that was completed by a department.</td>
+    <td>To interact with this visualization, a person need only to mouseover  &nbsp;  &nbsp;  &nbsp;  &nbsp; the different bars that represent the number of projects completed by
+    different departments. On each mouseover on a bar, the number of projects in the particular department as
+    well as the name of the &nbsp;  department is displayed.
+
+
+
+</td>		
+    <td>This visualization is intended for anyone that wants to compare the number of projects completed by different departments. This can help a person know the capacity of a department and how efficient they are in handling projects.
+</td>
+  </tr>
+ 
+</table>
+</div>
+   <div class = "dives">
+    <a href="https://plot.ly/~Maimuna/117/" target="_blank" title="Number of projects completed per departmentÊ vs Agency Name" style="display: block; text-align: center;"><img src="https://plot.ly/~Maimuna/117.png" alt="Number of projects completed per departmentÊ vs Agency Name" style="max-width: 100%;width: 792px;"  width="792" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <script data-plotly="Maimuna:117" src="https://plot.ly/embed.js" async></script>
+</div>
+
+
+
+
+    </section>
+    
+    <footer></footer>
+    
+    </body>
+    </html>

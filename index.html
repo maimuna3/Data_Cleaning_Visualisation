@@ -1,0 +1,58 @@
+<!DOCTYPE>
+<html lang= "en">
+<html>
+    <head>
+        <meta charset ="utf-8">
+        <title>Open Data</title>
+        <link href="style.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <script type= "text/javascript" src= "js/bootstrap.js"></script>
+        <script type= "text/javascript" src= "d3/d3.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/waypoints.js"></script>
+        <script src="js/waypoints-sticky.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function () {
+            $('.nav').waypoint('sticky');
+        });
+    </script>
+    </head>
+    <body background= "images/background.jpg">
+    <header>
+ <img src= "images/logo.jpg" alt="logo" width= "300" height="150">  <img class="image" src= "images/head.png" alt="head" width= "1120" height="150">
+    </header>
+    
+  
+    <div class="nav">
+
+    <ul>
+    <li><a href="index.html"><b>DATA CLEANING</b></a></li>
+    <li><a href="visualisation1.html"><b>VISUALISATION 1</b></a></li>
+    <li><a href="visualisation2.html"><b>VISUALISATION 2</b></a></li>
+    <li><a href="about.html"><b>ABOUT ME</b></a></li>
+    <li><a href="contact.html"><b>CONTACT ME</b></a></li>
+    </ul>
+    
+   
+    </div>
+    <section>
+    <div class = "dives">
+    <h3>DATA CLEANING</h3>
+    <br>
+    <h4>Below are the errors discovered while cleaning the datasetin preparation for propriate visualisation</h4>
+    <p><b>1.    Spelling Errors</b> : The dataset contained a number of spelling errors in the Agency names. To find the spelling errors, the text facet feature that allows the selection of subsets of data to act on was used to find the errors and these errors were fixed by manual edit.</p>
+    <p><b>2.	Multiple representation</b> : The data set contained data that had multiple representations of the same thing. The text facet was used to identify the errors, then the cluster and edit feature was used fix them. This feature groups different cell values that might be alternative representations of the same thing and allows a person to edit it making them a single representation.</p>
+    <p><b>3.    Mixed columns</b> : Some columns in the dataset were mixed up, displaying data from different columns in a column. For example, after row 500, all the columns shift a column forward making agency names appear under investments title. This was resolved using the custom text transform feature under the edit cell feature.</p>
+    <p><b>4.	Redundant data</b> : The unique project ID which is not so unique and the Project ID, which is unique, serve the same purpose, so the unique project ID column was deleted. Also Agency name and agency code always matched the Agency name, this was solved by combining both columns to reduce redundancy in the dataset. The add column based on this column under the edit column feature was used to solve this problem.</p>
+    <p><b>5.	Duplicate record detection</b> : some of the projects records e.g. the Project id column were duplicated within the dataset. The cluster and edit feature was used to find this error. Looking at the data in the cluster and edit panel, there was traces of data duplication, so the browse cluster was used to check if the columns were truly duplicated. Once found the duplicated data was starred and then the stars rows are viewed later by applying the star facet feature to all columns, select true values and delete them by selecting the remove all matching rows form the edit rows menu.</p>
+    <p><b>6.	Summation records</b> : Summation records were detected in the unique investment column. This was found while applying the text facet function to the columns of the dataset. To resolve this, I found all total rows and then starred them. To delete the rows, the facet by star from the All column was selected, then true was selected which then displayed all starred columns, finally, remove all matching rows form the edit row menu was applied to remove the columns.</p>
+    <p><b>7.	Wrong column titles</b> : after importing the data to open refine, all the columns in the dataset had a wrong column name. The column names were represented as fields and not as titles. This was resolved by renaming reach column title to its appropriate name</p> 
+    </div>
+    
+    
+    </section>
+    
+    <footer></footer>
+    
+    </body>
+    </html>

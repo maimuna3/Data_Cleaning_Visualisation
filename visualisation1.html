@@ -1,0 +1,75 @@
+<!DOCTYPE>
+<html lang= "en">
+<html>
+    <head>
+        <meta charset ="utf-8">
+        <title>Open Data</title>
+        <link href="style.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <script type= "text/javascript" src= "js/bootstrap.js"></script>
+        <script type= "text/javascript" src= "d3/d3.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/waypoints.js"></script>
+        <script src="js/waypoints-sticky.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function () {
+            $('.nav').waypoint('sticky');
+        });
+    </script>
+    </head>
+    <body background= "images/background.jpg">
+    <header>
+ <img src= "images/logo.jpg" alt="logo" width= "300" height="150">  <img class="image" src= "images/head.png" alt="head" width= "1120" height="150">
+    </header>
+    
+  
+    <div class="nav">
+
+    <ul>
+    <li><a href="index.html"><b>DATA CLEANING</b></a></li>
+    <li><a href="visualisation1.html"><b>VISUALISATION 1</b></a></li>
+    <li><a href="visualisation2.html"><b>VISUALISATION 2</b></a></li>
+    <li><a href="about.html"><b>ABOUT ME</b></a></li>
+    <li><a href="contact.html"><b>CONTACT ME</b></a></li>
+    </ul>
+    
+   
+    </div>
+    <section>
+    <div>
+    <br>
+    <table>
+  <tr><th><h3>What the visualization is showing</h3></th><th><h3>How the visualization is interactive</h3></th><th><h3>Who the intended audience is</h3></th></tr>
+    <tr>
+    <td>This visualization shows information about the average cost and schedule  &nbsp;  &nbsp; variances for the projects
+    in different departments. The variances are shown in percentage and allow a person to know departments
+    whose projects are always completed on time or earlier. It also shows if departments complete their
+    projects  with the budgeted cost or not. The blue bars represent the schedule variance  &nbsp;  &nbsp;  &nbsp; while the orange
+    bars represent the cost variance. Bars with positive values show that a department did not either complete
+    their projects within the specified time  &nbsp;  &nbsp;  &nbsp; or spent more than budgeted for the project, depending on the color
+    of the bar.</td>
+    <td>The visualization allows a person to hover over the bars, which will show the average cost variance
+    or schedule variance of completed projects per department. The visualization allows a person to be able
+    to view the cost variance alone, the schedule variance alone or both at a time by clicking the  &nbsp;  &nbsp;  &nbsp; orange or
+    blue square at the top right side of the visualization. Clicking the square would make it dim and disable
+    the bar. 
+
+</td>		
+    <td>This visualization is intended for people that want to compare different departments wit respect to their cost and schedule overruns. At a glance, it shows which departments are able to manage their resources efficiently. Someone can easily pick out which departments are doing well and which departments need to be investigated to find the root cause of the problem 
+
+</td>
+  </tr>
+ 
+</table>
+</div>
+<div class = "dives">
+     <a href="https://plot.ly/~Maimuna/83/" target="_blank" title="Departmental Average Project Cost and Schedule Variances" style="display: block; text-align: center;">
+    <img src="https://plot.ly/~Maimuna/83.png"
+    alt="Departmental Average Project Cost and Schedule Variances" style="max-width: 100%; width: 600px; height: 440px;"  width="600" height="" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <script data-plotly="Maimuna:83" src="https://plot.ly/embed.js" async></script>
+    </section>
+    
+    <footer></footer>
+    
+    </body>
+    </html>
